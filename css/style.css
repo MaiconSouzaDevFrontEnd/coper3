@@ -147,7 +147,7 @@ body {
     transform: rotate(-45deg);
 }
 
-#burgerMenu:checked ~ .navtop-menu{
+#burgerMenu:checked ~ div .navtop-menu{
     transform: translateX(0vw);
 }
 
