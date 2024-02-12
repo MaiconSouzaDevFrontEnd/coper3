@@ -1,0 +1,684 @@
+:root {
+    --color-green: #00bf63;
+    --color-whiteLite:#ffffffdc;
+   
+    --color-1:#60AA89;
+    --color-2:#3E4653;
+    --color-3:#4BBF7D;
+    --color-4:#606061;
+    --color-5:#40744E;
+
+    --color-6:#44BB81;
+    --color-7:#A8B5BF;
+    --color-8:#393D40;
+    --color-9:#53BF83;
+    --color-10:#407348;
+
+    --color-11:#122333;
+    --colorAzulPetrolio:#022333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    background-color: #fff;
+    scroll-behavior: smooth !important;
+}
+/* css genéricos */
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1040px;
+    width: 100%;
+    margin: 70px auto;
+}
+/* FIM css genéricos */
+
+/* header start*/
+.header_top {
+    height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, .450), rgba(0, 0, 0, .8) 70%, rgba(0, 0, 0, .450)), url(../Img/banner/banner_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+/* nav */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    background-color: #000;
+    overflow-y:hidden ;
+    padding: 16px;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+/* logo */
+.nav-top_logo {
+    width: 110px;
+}
+
+.nav-top-logo_img {
+    width: 100%;
+}
+
+/* menu-burger */
+
+#burgerMenu{
+    display: none;
+    transition: all 2s;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    clip: 0 0 0 0;
+}
+
+.burgerMenu {
+    position: relative;
+    top: -70px;
+    left: 87%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    
+    cursor: pointer;
+    
+}
+
+.burgerLinha{
+    position:relative;
+    display: inline-block;
+
+    width: 40px;
+    height: 3px;
+
+    background-color: white;
+    border-radius: 30px;
+}
+
+.burgerLinha::after, .burgerLinha::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: white;
+    transition: transform 1s;
+}
+
+.burgerLinha::after{
+    transform: translateY(10px);
+}
+
+.burgerLinha::before{
+    transform: translateY(-10px);
+}
+
+#burgerMenu:checked + .burgerMenu .burgerLinha{
+    background-color: transparent;
+}
+
+#burgerMenu:checked + .burgerMenu .burgerLinha::before{
+    transform: rotate(45deg);
+}
+
+#burgerMenu:checked + .burgerMenu .burgerLinha::after{
+    transform: rotate(-45deg);
+}
+
+#burgerMenu:checked ~ .navtop-menu{
+    transform: translateX(0vw);
+}
+
+/* ul navtop-menu */
+.navtop-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    
+}
+
+.navtop-a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f2f2f2; */
+    padding: 5px 15px;
+    
+    text-decoration: none;
+    font-size: 13.4px;
+    font-weight: 600;
+    color: white;
+    
+    transition: all 500ms;
+}
+
+.navtop-a ion-icon{
+    font-size:15px ;
+    margin-right: 7px;
+    position: relative;
+}
+
+.navtop-a::before,.navtop-a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 1s;
+}
+
+.navtop-a::before{
+    top: 0;
+    left: 0;
+    
+    transform-origin: left;
+}
+
+.navtop-a::after{
+    bottom: 0;
+    right: 0;
+
+    transform-origin: right;
+}
+
+.navtop-a:hover::before, .navtop-a:hover::after {
+    width: 100%;
+}
+
+.nav-top_telefones{
+    width: 100%;
+}
+
+.nav-top_telefones ion-icon {
+    font-size: 30px;
+}
+
+.nav-top_telefones a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: white;
+    background-color: #25D366; 
+    padding: 4px 30px;
+    border-radius: 30px;
+}
+
+/* header_top-content */
+.header_top-content {
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header_top-title {
+    font-family:sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-top: 150px;
+}
+
+.header_top-subTitle {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.header_top-txtEspecializada {
+    font-size: 1rem;
+    line-height: 5.5;
+}
+.header_top-txtEspecializada span{
+    text-transform: uppercase;
+    color: var(--color-green);
+}
+/* FIM header_top-txtEspecializada */
+
+marquee{
+    
+}
+
+.header_top-msg-atendimento .msg-atendimento{
+    width: 100%;
+    color: #00bf63;
+    font-size: 1.9em;
+    font-weight: bolder;
+    text-shadow: 0 0 4.5px;
+    position: relative;
+}
+
+.msg-atendimento::before, .msg-atendimento::after{
+    content: '';
+    position: absolute;
+    
+    width: 48px;
+    height: 48px;
+}
+
+.msg-atendimento::before{
+    left: -57px;
+    background-image: url('/Img/parts_logo/carregadeira_cana.png');
+    background-repeat: none;
+    background-position:center center;
+    background-size: cover;
+}
+
+.msg-atendimento::after{
+    right: -57px;
+    width: 43px;
+    height: 43px;
+    background-image: url('/Img/parts_logo/transbordo-para-EsquerdaH380px.png');
+    background-repeat: none;
+    background-position:center center;
+    background-size: cover;
+}
+
+/* section  start */
+.servicos{
+    height: 50vh;
+}
+
+#servicos,#carregadeira,#transbordo,#localizacao,#contatos{
+    scroll-margin-top:110px;
+}
+
+.servicos__content{
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.servicos__area span{
+    font-size: 3em;
+}
+
+/* carregadeira */
+.container-pecas_carregadeira, .container-pecas_transbordo{
+    padding-top: 5em;
+    text-align: center;
+    background-color: #ffffffdc;
+}
+
+.banners img{
+    width: 100%;
+    display: block;
+    border-radius: 10px; 
+}
+
+.subContainer{
+    padding-inline: 2rem;
+}
+
+.subTitle{
+    position: relative;
+    margin: auto;
+    text-shadow: 0 0 1px #000;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--color-green);
+    padding: 15px;
+    background-color: #dcdcdc6f;
+    border-radius: 10px;
+}
+
+.container-pecas_carregadeira{
+    position: relative;
+}
+
+.carregadeira{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
+}
+
+.subContainer .iten{
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #888888;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+.subContainer .imgBig{
+    grid-row: span 2;
+    grid-column: span 2
+}
+
+.subContainer .imgOneColumn{
+    grid-row: span 2;
+    padding: 20px;
+}
+
+.subContainer .imgOneColumn img{
+    height: 100%;
+}
+
+.subContainer .iten:hover, .boxTransbordo .iten:hover{
+    transform: scale(1.02);
+}
+
+.subContainer .iten img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+/* Peças para Transbordo */
+.boxTransbordo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxTransbordo .iten{
+    width: 220px;
+    height: 280px;
+    box-shadow: 0px 0px 5px 1px #888888;
+    border-radius: 20px;
+}
+
+.boxTransbordo .iten img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 15px;
+}
+
+/* Localização */
+
+.localizacao_content{
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.localizacao_title{
+    font-size:1.8em ;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.localizacao_title ion-icon{
+    color: rgb(255, 0, 0);
+}
+
+.localizacao_content p{
+    font-size: 1.1em;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.localizacao_btn{
+    margin: 10px auto;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: rgb(255, 0, 0) ;
+}
+
+.localizacao_btn ion-icon{
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+/* footer container-contatos  */
+
+.container-contatos{
+    padding: 30px 0;
+    background-color: #042747;/* #022333 */
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.contatos-box {
+    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contatos-btn-whatsapp {
+    position: fixed;
+    bottom:80px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.contatos-btn-whatsapp ion-icon{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color:white;
+    background-color: #00bf63;
+    border-radius:50% ;
+    animation: whatsapp 2s ease-in-out infinite;
+}
+
+ .container-contatos_desenvolvido{
+    text-align: center;
+    line-height: 2;
+ }   
+
+/* Fim footer container-contatos */
+
+/* animaçao Whatsapp */
+@keyframes whatsapp{
+  
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(1.6px);
+        transform: scale(1.098);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}/* Fim animaçao Whatsapp */
+
+/* Midia Mobile */
+@media screen and (max-width:600px) {
+    .nav-top{
+        padding: 16px;
+        height: 80px;
+        overflow: visible;
+    }
+    .nav-top_logo{
+        height: 70px;
+        width: 100px;
+    }
+    .nav-top-logo_img {
+        height: 100%;
+    }
+
+    .burgerMenu{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 5px;
+    }
+    
+    .navtop-menu {
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:stretch;
+        background-color: #fff;
+        transform: translateX(-100vw);
+        border-radius: 0;
+    }
+
+    .navtop-menu:last-child{
+        border-bottom: 2px solid #9e9e9e;
+    }
+
+    .navtop-a{
+        justify-content: start;
+        height: 9vh;
+        color:#000 ;
+    }
+
+    .navtop-a:hover{
+        background-color: var(--colorAzulPetrolio);
+        font-size: 15px;
+        color:white ;
+    }
+    .navtop-a::before, .navtop-a::after{
+        height: 3px;
+        background-color: var(--colorAzulPetrolio);
+    }
+
+    .nav-top_telefones{
+        display: none;
+    }
+
+    marquee{
+        margin-top: 30px;
+    }
+
+   /*  .header_top-title{
+
+    } */
+    
+    .header_top-txtEspecializada{
+        margin-top: 10px;
+        line-height: initial;
+        padding: 5px 7px;
+    }
+
+    .subTitle{
+        font-size: 2.1em;
+        padding: 5px;
+        padding-bottom: 65px;
+    }
+
+
+    .banners img{
+        border-radius:initial;
+    }
+    .subTitle{
+        font-size:30px ;
+        padding: 7px;
+    }
+
+  /*   .carregadeira{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-direction: column; 
+        flex-wrap: wrap;
+        background-color: #00bf63;
+
+    }
+
+    .carregadeira .iten{
+        background-color: #000;
+    }
+
+    .carregadeira .iten img{
+        flex: 1;
+    }
+
+    .subContainer .imgBig{
+        flex:2 ;
+    } 
+*/
+    .carregadeira{
+        grid-template-columns: minmax(180px, 100%);
+    } 
+
+    .subContainer .imgBig{
+        grid-row: span 1;
+        grid-column: span 1
+    }
+    
+    .subContainer .imgOneColumn{
+        grid-row: span 1;
+    }
+    
+    .boxTransbordo{
+        padding-inline: 2rem;
+    }
+
+    .boxTransbordo .iten{
+        width: 100%;
+        height: 280px;
+        padding:20px;
+    }
+
+    
+    .contatos-box{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contatos-contentLeft,
+    .contatos-contentRight{
+        width: 100%;
+        padding: 5% ;
+    } 
+
+    .contatos-btn-whatsapp {
+        position: fixed;
+        bottom:40px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        
+    }
+}    /*FIM Mobile  */

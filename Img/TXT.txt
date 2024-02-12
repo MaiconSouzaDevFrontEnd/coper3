@@ -1,0 +1,15 @@
+cor de fundo da logo
+background-color: #082335
+
+cor da fonte da logo
+color:#cb9b45
+
+    background: #3a3a3a; cor escura cinza
+        background-color: #464646; cinza mais clara
+
+
+  <link href="/img/favicon.ico" type="image/x-icon" rel="icon"/><link href="/img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <meta name="description" content="Somos empresa com mais de 30 anos no mercado, destacando-se pela alta qualidade no desenvolvimento de soluções hidráulicas para nossos clientes.">
+    <meta name="author" content="Copecar Peças Agrícolas">
+    <meta name="keywords" content="copecar, peças agrícolas, máquinas agrícolas, soluções hidráulicas, HDA,  Eaton, Vickers, Aeroquip, Parker, Danfoss, peças para colhedoras e carregadoras de cana, cilindros hidráulicos, bombas, motores, comandos, mangueiras, adaptadores, filtros, redutores de roda, manutenção de bombas, comandos, cilindros hidráulicos, mangueiras, conexões hidráulicas, comandos, bombas, motores" />
+    <meta property="og:title" content="Copecar Peças Agrícolas" />
