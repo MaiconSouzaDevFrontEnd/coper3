@@ -184,9 +184,9 @@ body {
     transition: all 500ms;
 }
 
-.navtop-a:hover{
+.navtop-a:hover/* , .navtop-a:active */{
     background-color: var(--colorAzulPetrolio);
-    font-size: 15px;
+    
     color:white ;
 }
 
