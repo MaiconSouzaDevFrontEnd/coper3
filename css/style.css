@@ -171,15 +171,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #f2f2f2; */
-    padding: 5px 15px;
+    background-color: #f2f2f2;
+    margin: 0 3px;
     
+    border-radius: 2px;
     text-decoration: none;
     font-size: 13.4px;
     font-weight: 600;
-    color: white;
+    padding: 5px 15px;
+    color: var(--colorAzulPetrolio);
     
     transition: all 500ms;
+}
+
+.navtop-a:hover{
+    background-color: var(--colorAzulPetrolio);
+    font-size: 15px;
+    color:white ;
 }
 
 .navtop-a ion-icon{
@@ -271,14 +279,14 @@ body {
 }
 /* FIM header_top-txtEspecializada */
 
-marquee{
+/* marquee{
     
-}
+} */
 
 .header_top-msg-atendimento .msg-atendimento{
     width: 100%;
     color: #00bf63;
-    font-size: 1.9em;
+    font-size: 1em;
     font-weight: bolder;
     text-shadow: 0 0 4.5px;
     position: relative;
@@ -287,9 +295,9 @@ marquee{
 .msg-atendimento::before, .msg-atendimento::after{
     content: '';
     position: absolute;
-    
-    width: 48px;
-    height: 48px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
 }
 
 .msg-atendimento::before{
@@ -302,8 +310,8 @@ marquee{
 
 .msg-atendimento::after{
     right: -57px;
-    width: 43px;
-    height: 43px;
+    width: 38px;
+    height: 38px;
     background-image: url('/Img/parts_logo/transbordo-para-EsquerdaH380px.png');
     background-repeat: none;
     background-position:center center;
