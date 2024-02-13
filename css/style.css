@@ -104,7 +104,7 @@ body {
 
 .burgerMenu {
     position: relative;
-    top: -70px;
+    top: -90px;
     left: 87%;
     display: none;
     justify-content: center;
@@ -125,6 +125,7 @@ body {
 
     background-color: white;
     border-radius: 30px;
+    
 }
 
 .burgerLinha::after, .burgerLinha::before{
@@ -150,11 +151,19 @@ body {
 
 #burgerMenu:checked + .burgerMenu .burgerLinha::before{
     transform: rotate(45deg);
+    top: 4px;
 }
 
 #burgerMenu:checked + .burgerMenu .burgerLinha::after{
     transform: rotate(-45deg);
+    top: 4px;
 }
+
+/* #burgerMenu:checked + .burgerMenu{
+    background-color: white;
+    border-radius: 30px;
+    
+}  */
 
 #burgerMenu:checked ~ div .navtop-menu{
     transform: translateX(0vw);
@@ -182,7 +191,6 @@ body {
     justify-content: center;
     background-color: #f2f2f2;
     margin: 0 3px;
-    
     border-radius: 2px;
     text-decoration: none;
     font-size: 13.4px;
