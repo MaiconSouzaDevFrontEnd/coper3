@@ -263,7 +263,7 @@ body {
 
 .header_top-txtEspecializada {
     font-size: 1rem;
-    line-height: 5.5;
+    line-height: 5.5;color: var(--color-green);
 }
 .header_top-txtEspecializada span{
     text-transform: uppercase;
@@ -315,7 +315,7 @@ marquee{
     height: 50vh;
 }
 
-#servicos,#carregadeira,#transbordo,#localizacao,#contatos{
+#servicos,#carregadeira,#transbordo,#localizacao,#catalogo,#contatos{
     scroll-margin-top:110px;
 }
 
@@ -468,11 +468,45 @@ marquee{
     font-size: 1.2em;
 }
 
+/* container-catalogo */
+
+.container-catalogo{
+    border-top: 1px solid #393D40;
+    text-align: center;
+    padding: 50px;
+}
+
+.container-catalogo h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.container-catalogo_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containe-catalogo_imgPDF{
+    width: 30px;
+}
+
+.containe-catalogo_link{
+    text-decoration: none;
+    
+    padding: 2px 30px;
+    background-color: #40744E;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* FIM container-catalogo */
+
 /* footer container-contatos  */
 
 .container-contatos{
     padding: 30px 0;
-    background-color: #042747;/* #022333 */
+    background-color: #131313;/* #022333 */
     padding-bottom: 50px;
     color: #fff;
 }
