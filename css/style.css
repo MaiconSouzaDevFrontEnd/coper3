@@ -16,8 +16,24 @@
 
     --color-11:#122333;
     --colorAzulPetrolio:#022333;
+
+    --shadow: 0 1px 2.2px rgba(0, 0, 0, 0.02 ),
+    0 2.5px 5.3px rgba(0, 0, 0, 0.028 ),
+    0 4.6px 11px rgba(0, 0, 0, 0.038 ),
+    0 8.3px 17px rgba(0, 0, 0, 0.042 ),
+    0 15.5px 30px rgba(0, 0, 0, 0.60 ),
+    0 37px 80px rgba(0, 0, 0, 0.07 );
 }
 
+/* Tamanho do card consideravel Width:220px height:280px */
+/* 
+    --shadow: 0 1px 2.2px rgba(0, 0, 0, 0.02 ),
+    0 2.5px 5.3px rgba(0, 0, 0, 0.028 ),
+    0 4.6px 11.8px rgba(0, 0, 0, 0.038 ),
+    0 8.3px 17.9px rgba(0, 0, 0, 0.042 ),
+    0 15.5px 37.2px rgba(0, 0, 0, 0.60 ),
+    0 37px 80px rgba(0, 0, 0, 0.07 )
+    */
 * {
     padding: 0;
     margin: 0;
@@ -82,13 +98,14 @@ body {
 }/* Fim Logo */
 
 /*  */
+
 .nav-top_container{
     width: 100%;
     flex-direction: column;
     gap: 5px;
 }
-
 /*  */
+
 
 /* menu-burger */
 
@@ -169,6 +186,56 @@ body {
     transform: translateX(0vw);
 }
 
+/* nav-top_telefones Marquee */
+
+/* marquee{}*/
+
+.header_top-msg-atendimento .msg-atendimento{
+    width: 100%;
+    color: #00bf63;
+    font-size: 1em;
+    font-weight: bolder;
+    text-shadow: 0 0 4.5px;
+    position: relative;
+}
+
+.msg-atendimento a{
+   text-decoration: none;
+   color: white;
+   background-color: #00bf00;
+   border-radius: 30px;
+   padding: 0 7px;
+}
+
+.msg-atendimento::before, .msg-atendimento::after{
+    content: '';
+    position: absolute;
+    top: -8px;
+     width: 38px;
+    height: 40px; 
+}
+
+.msg-atendimento::before{
+    left: -57px;
+
+    background-image: url('/Img/parts_logo/carregadeira_cana.png');
+    background-repeat: none;
+    background-position:center center;
+    background-size: cover;
+}
+
+.msg-atendimento::after{
+    right: -57px;
+    width: 30px;
+    
+    background-image: url('/Img/parts_logo/transbordo-para-EsquerdaH380px.png');
+    background-repeat: none;
+    background-position:center center;
+    background-size: cover;
+}
+ /* FIM nav-top_telefones Marquee */ 
+
+
 /* ul navtop-menu */
 .navtop-menu {
     position: relative;
@@ -202,8 +269,10 @@ body {
 }
 
 .navtop-a:hover/* , .navtop-a:active */{
-    background-color: var(--colorAzulPetrolio);
-    
+/*     background-color: var(--colorAzulPetrolio);
+ */    background-color: #d6d5d563;
+
+
     color:white ;
 }
 
@@ -240,7 +309,7 @@ body {
     width: 100%;
 }
 
-.nav-top_telefones{
+/* .nav-top_telefones{
     width: 100%;
 }
 
@@ -249,21 +318,9 @@ body {
 }
 
 .nav-top_telefones a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    height: 30px;
-    font-size: 14px;
-    font-weight: 900;
-    text-wrap: nowrap;
     text-decoration: none;
-    color: white;
-    background-color: #25D366; 
-    padding: 4px 30px;
-    border-radius: 30px;
-}
-
+}  
+ */
 /* header_top-content */
 .header_top-content {
     width: 100%;
@@ -295,46 +352,6 @@ body {
     color: var(--color-green);
 }
 /* FIM header_top-txtEspecializada */
-
-/* marquee{
-    
-} */
-
-.header_top-msg-atendimento .msg-atendimento{
-    width: 100%;
-    color: #00bf63;
-    font-size: 1em;
-    font-weight: bolder;
-    text-shadow: 0 0 4.5px;
-    position: relative;
-}
-
-.msg-atendimento::before, .msg-atendimento::after{
-    content: '';
-    position: absolute;
-    top: -8px;
-     width: 38px;
-    height: 40px; 
-}
-
-.msg-atendimento::before{
-    left: -57px;
-
-    background-image: url('/Img/parts_logo/carregadeira_cana.png');
-    background-repeat: none;
-    background-position:center center;
-    background-size: cover;
-}
-
-.msg-atendimento::after{
-    right: -57px;
-    width: 30px;
-    
-    background-image: url('/Img/parts_logo/transbordo-para-EsquerdaH380px.png');
-    background-repeat: none;
-    background-position:center center;
-    background-size: cover;
-}
 
 /* section  start */
 .servicos{
@@ -400,7 +417,8 @@ body {
 .subContainer .iten{
     position: relative;
     background-color: #fff;
-    box-shadow: 0px 0px 5px 1px #888888;
+    /* box-shadow: 0px 0px 5px 1px #888888; */
+    box-shadow: var(--shadow);
     border-radius: 20px;
     padding: 30px 20px;
 }
