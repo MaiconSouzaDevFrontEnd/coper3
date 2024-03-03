@@ -186,38 +186,38 @@ body {
     transform: translateX(0vw);
 }
 
-/* nav-top_telefones Marquee */
+/* nav-top_atendimento */
+.nav-top_atendimento{
+    margin-bottom: 5px;
+}
 
-/* marquee{}*/
-
-.header_top-msg-atendimento .msg-atendimento{
-    width: 100%;
+.msg-atendimento{
+    margin: auto;
     color: #00bf63;
     font-size: 1em;
-    font-weight: bolder;
-    text-shadow: 0 0 4.5px;
+    font-weight: 700;
     position: relative;
 }
 
 .msg-atendimento a{
-   text-decoration: none;
-   color: white;
-   background-color: #00bf00;
-   border-radius: 30px;
-   padding: 0 7px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: #00bf00;
+    border-radius: 30px;
+    padding: 3px 19px;
 }
 
 .msg-atendimento::before, .msg-atendimento::after{
     content: '';
     position: absolute;
     top: -8px;
-     width: 38px;
+    width: 38px;
     height: 40px; 
 }
 
 .msg-atendimento::before{
     left: -57px;
-
     background-image: url('/Img/parts_logo/carregadeira_cana.png');
     background-repeat: none;
     background-position:center center;
@@ -233,7 +233,7 @@ body {
     background-position:center center;
     background-size: cover;
 }
- /* FIM nav-top_telefones Marquee */ 
+ /* FIM nav-top_atendimento */ 
 
 
 /* ul navtop-menu */
@@ -268,11 +268,8 @@ body {
     transition: all 500ms;
 }
 
-.navtop-a:hover/* , .navtop-a:active */{
-/*     background-color: var(--colorAzulPetrolio);
- */    background-color: #d6d5d563;
-
-
+.navtop-a:hover{
+    background-color: #d6d5d563;
     color:white ;
 }
 
@@ -309,18 +306,6 @@ body {
     width: 100%;
 }
 
-/* .nav-top_telefones{
-    width: 100%;
-}
-
-.nav-top_telefones ion-icon {
-    font-size: 30px;
-}
-
-.nav-top_telefones a{
-    text-decoration: none;
-}  
- */
 /* header_top-content */
 .header_top-content {
     width: 100%;
@@ -351,9 +336,9 @@ body {
     text-transform: uppercase;
     color: var(--color-green);
 }
-/* FIM header_top-txtEspecializada */
+/* FIM header_top-content */
 
-/* section  start */
+/* section  Serviços */
 .servicos{
     height: 50vh;
 }
@@ -606,29 +591,22 @@ body {
 }/* Fim animaçao Whatsapp */
 
 /* Midia Mobile */
-@media screen and (max-width:600px) {
+@media screen and (max-width:1124px) {
     .nav-top{
         padding: 16px;
-        height: 80px;
+        height: 100px;
         overflow: visible;
-    }
-    .nav-top_logo{
-        height: 70px;
-        width: 100px;
-    }
-    .nav-top-logo_img {
-        height: 100%;
     }
 
     .burgerMenu{
         display: block;
         position: absolute;
-        top: 25px;
-        right: 5px;
+        top: 30px;
+        left: 95vw;
     }
-    
     .navtop-menu {
         position: absolute;
+        
         width: 100%;
         top: 80px;
         left: 0;
@@ -639,7 +617,6 @@ body {
         transform: translateX(-100vw);
         border-radius: 0;
     }
-
     .navtop-menu:last-child{
         border-bottom: 2px solid #9e9e9e;
     }
@@ -659,19 +636,86 @@ body {
         height: 3px;
         background-color: var(--colorAzulPetrolio);
     }
+}
 
+@media screen and (max-width:875px){
+    .burgerMenu{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 93vw;
+        }
+    
+    .msg-atendimento, .msg-atendimento a{
+        font-size: 12px;
+    }    
+    .msg-atendimento::before, .msg-atendimento::after{
+        display: none;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .nav-top{
+        padding: 16px;
+        height: 80px;
+        overflow: visible;
+    }
+    .nav-top_logo{
+        height: 70px;
+        width: 100px;
+    }
+    .nav-top-logo_img {
+        height: 100%;
+    }
+
+   /*  .burgerMenu{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 5px;
+    } */
+
+    .nav-top_atendimento{
+        display: none;
+    }
+    
+  /*   .navtop-menu {
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:stretch;
+        background-color: #fff;
+        transform: translateX(-100vw);
+        border-radius: 0;
+    }
+ 
+    .navtop-menu:last-child{
+        border-bottom: 2px solid #9e9e9e;
+    }
+
+    .navtop-a{
+        justify-content: start;
+        height: 9vh;
+        color:#000 ;
+    }
+
+    .navtop-a:hover{
+        background-color: var(--colorAzulPetrolio);
+        font-size: 15px;
+        color:white ;
+    }
+    .navtop-a::before, .navtop-a::after{
+        height: 3px;
+        background-color: var(--colorAzulPetrolio);
+    }
+*/
     .nav-top_telefones{
         display: none;
     }
 
-    marquee{
-        margin-top: 30px;
-    }
-
-   /*  .header_top-title{
-
-    } */
-    
     .header_top-txtEspecializada{
         margin-top: 10px;
         line-height: initial;
@@ -684,37 +728,15 @@ body {
         padding-bottom: 65px;
     }
 
-
     .banners img{
         border-radius:initial;
     }
+
     .subTitle{
         font-size:30px ;
         padding: 7px;
     }
 
-  /*   .carregadeira{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* flex-direction: column; 
-        flex-wrap: wrap;
-        background-color: #00bf63;
-
-    }
-
-    .carregadeira .iten{
-        background-color: #000;
-    }
-
-    .carregadeira .iten img{
-        flex: 1;
-    }
-
-    .subContainer .imgBig{
-        flex:2 ;
-    } 
-*/
     .carregadeira{
         grid-template-columns: minmax(180px, 100%);
     } 
