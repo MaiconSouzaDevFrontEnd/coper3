@@ -638,13 +638,13 @@ body {
     }
 }
 
-@media screen and (max-width:875px){
+@media screen and (max-width:667px){
     .burgerMenu{
         display: block;
         position: absolute;
         top: 30px;
         left: 93vw;
-        }
+    }
     
     .msg-atendimento, .msg-atendimento a{
         font-size: 12px;
@@ -654,26 +654,26 @@ body {
     }
 
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 450px) {
+
     .nav-top{
         padding: 16px;
         height: 80px;
         overflow: visible;
     }
     .nav-top_logo{
-        height: 70px;
         width: 100px;
     }
     .nav-top-logo_img {
-        height: 100%;
+        width:100%;
     }
 
-   /*  .burgerMenu{
+     .burgerMenu{
         display: block;
         position: absolute;
         top: 25px;
-        right: 5px;
-    } */
+        left: 85vw;
+    } 
 
     .nav-top_atendimento{
         display: none;
