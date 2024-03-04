@@ -307,9 +307,11 @@ body {
 }
 
 /* header_top-content */
+
+
 .header_top-content {
     width: 100%;
-    margin:auto;
+    margin: auto;
     text-align: center;
     color: #fff;
     font-weight: 500;
