@@ -548,6 +548,30 @@ body {
     align-items: center;
 }
 
+.contatos-contentLeft ion-icon{
+    font-size: 20px;
+}
+
+.contatos-contentLeft, .contatos-contentRight{
+    flex-direction: column;
+}
+
+.contatos-contentLeft a,
+.contatos-contentRight a{
+    text-decoration: none;
+    box-shadow:0 0 5px white;
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 700
+}
+
+
+
 .contatos-btn-whatsapp {
     position: fixed;
     bottom:80px;
@@ -780,7 +804,6 @@ body {
         bottom:40px;
         right: 30px;
         width: 40px;
-        height: 40px;
-        
+        height: 40px; 
     }
 }    /*FIM Mobile  */
