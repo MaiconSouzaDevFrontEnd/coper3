@@ -342,7 +342,7 @@ body {
 
 /* section  Serviços */
 .servicos{
-    height: 50vh;
+    
 }
 
 #servicos,#carregadeira,#transbordo,#localizacao,#catalogo,#contatos{
@@ -350,15 +350,30 @@ body {
 }
 
 .servicos__content{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     justify-content: center;
     align-items: center;
-    height: inherit;
+    flex-direction: column;
 }
 
 .servicos__area span{
-    font-size: 3em;
+    
 }
+
+.servicos__galeria__cilindros{
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.servicos__galeria__cards{
+    w
+}
+.servicos__galeria__cards img{
+    width: 100%;
+    object-fit: contain;
+}
+
 
 /* carregadeira */
 .container-pecas_carregadeira, .container-pecas_transbordo{
