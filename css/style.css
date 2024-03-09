@@ -341,43 +341,53 @@ body {
 /* FIM header_top-content */
 
 /* section  Serviços */
-.servicos{
-    
-}
 
 #servicos,#carregadeira,#transbordo,#localizacao,#catalogo,#contatos{
     scroll-margin-top:110px;
 }
 
 .servicos__content{
-    /* background-color: aliceblue; */
+   
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.servicos__area span{
-    
+.servicos__title{
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .servicos__galeria__cilindros{
-    padding: 1.5rem;
-    justify-content: space-between;
+    padding: 1.5rem 0;
+    justify-content:space-between;
     align-items: center;
-    gap: 10px;
+
+    gap: 2px;
 }
 .servicos__galeria__cards{
-    w
+    height: 360px;
+    width: 280px;
+    padding: 7px;
+    overflow: hidden ;
+   
+    transition: 1.5s;
 }
 .servicos__galeria__cards img{
+    height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+}
+
+.servicos__galeria__cards:hover{
+    transform: scale(1.05);
 }
 
 
 /* carregadeira */
 .container-pecas_carregadeira, .container-pecas_transbordo{
-    padding-top: 5em;
     text-align: center;
     background-color: #ffffffdc;
 }
@@ -420,7 +430,7 @@ body {
     position: relative;
     background-color: #fff;
 
-    box-shadow: var(--shadow);
+    box-shadow: 0px 0px 7px 5px #888888;
     border-radius: 20px;
     padding: 30px 20px;
 }
@@ -463,7 +473,7 @@ body {
 .boxTransbordo .iten{
     width: 220px;
     height: 280px;
-    box-shadow: 0px 0px 5px 1px #888888;
+    box-shadow: 0px 0px 7px 5px #888888;
     border-radius: 20px;
 }
 
@@ -520,19 +530,23 @@ body {
     border-top: 1px solid #393D40;
     text-align: center;
     padding: 50px;
+    
 }
 
 .container-catalogo h4{
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 .container-catalogo_box{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
-
+.container-catalogo_box img{
+    color: white;
+}
 .containe-catalogo_imgPDF{
     width: 30px;
 }
@@ -551,7 +565,7 @@ body {
 
 .container-contatos{
     padding: 30px 0;
-    background-color: #131313;/* #022333 */
+    background-color: #01131c;/* #022333 */
     padding-bottom: 50px;
     color: #fff;
 }
@@ -563,32 +577,52 @@ body {
 }
 
 .contatos-contentLeft ion-icon{
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .contatos-contentLeft, .contatos-contentRight{
     flex-direction: column;
 }
 
+.contatos-contentLeft_bt{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .contatos_bt-atendimento{
-    justify-content:center ;
+    justify-content:space-evenly ;
     align-items: center;
     background-color: var(--color-green);
+   
 }
 
 .contatos-contentLeft a,
 .contatos-contentRight a{
     text-decoration: none;
     box-shadow:0 0 5px white;
-    /* display: block; */
+
     color: white;
     border: 1px solid white;
     border-radius: 20px;
-    padding: 5px 15px;
+    padding: 5px 20px;
     margin: 15px 0;
-    text-align: center;
-    font-weight: 700
+    
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
+
+.contatos-contentRight a{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.contatos-contentRight ion-icon{
+    margin-right: 5px;
+    font-size: 26px;
+}
+
 
 .contatos-btn-whatsapp {
     position: fixed;
@@ -613,10 +647,19 @@ body {
 }
 
  .container-contatos_desenvolvido{
+    padding-top: 10px;
+    border-top:2.3px solid #ccc ;
     text-align: center;
     line-height: 2;
  }   
-
+.container-contatos_desenvolvido-Link{
+    
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1.5px solid whitesmoke;
+    padding: 2px 30px;
+    border-radius: 30px;
+}
 /* Fim footer container-contatos */
 
 /* animaçao Whatsapp */
@@ -680,6 +723,15 @@ body {
         height: 3px;
         background-color: var(--colorAzulPetrolio);
     }
+
+    .servicos__galeria__cilindros{
+        flex-wrap: wrap;
+    }
+    .servicos__galeria__cards{
+        height: 320px;
+        width: 240px;
+        padding: 7px;
+    }
 }
 
 @media screen and (max-width:667px){
@@ -697,6 +749,11 @@ body {
         display: none;
     }
 
+    .servicos__galeria__cards{
+        height: 100%;
+        width: 100%;
+        padding: 7px;
+    }
 }
 @media screen and (max-width: 450px) {
 
