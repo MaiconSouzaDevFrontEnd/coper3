@@ -757,6 +757,7 @@ body {
     }
 
     .servicos__manutencao{
+        padding: 8px;
         text-align: center;
     }
 }
