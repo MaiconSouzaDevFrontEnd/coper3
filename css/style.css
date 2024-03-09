@@ -757,7 +757,7 @@ body {
     }
 
     .servicos__manutencao{
-        padding: 5px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 450px) {
