@@ -755,6 +755,10 @@ body {
         width: 100%;
         padding: 7px;
     }
+
+    .servicos__manutencao{
+        padding: 5px;
+    }
 }
 @media screen and (max-width: 450px) {
 
