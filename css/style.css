@@ -726,6 +726,7 @@ body {
 
     .servicos__galeria__cilindros{
         flex-wrap: wrap;
+        padding: 5px;
     }
     .servicos__galeria__cards{
         height: 320px;
