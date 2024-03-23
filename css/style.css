@@ -776,6 +776,14 @@ body {
 }
 
 @media screen and (max-width:667px){
+    .nav-top_atendimento{
+        display: none;
+    }
+    
+    .nav-top_telefones{
+        display: none;
+    }
+    
     .burgerMenu{
         display: block;
         position: absolute;
@@ -839,14 +847,6 @@ body {
         top: 25px;
         left: 85vw;
     } 
-
-    .nav-top_atendimento{
-        display: none;
-    }
-    
-    .nav-top_telefones{
-        display: none;
-    }
 
     .header_top-txtEspecializada{
         margin-top: 10px;
