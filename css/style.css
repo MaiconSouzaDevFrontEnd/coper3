@@ -197,7 +197,7 @@ body {
     margin: 0 5px;
 }
 
-.msg-atendimento a:hover{
+.msg-atendimento a:hover, .msg-atendimento a:focus{
     background-color: #05954f;
 }
 
@@ -719,6 +719,13 @@ body {
 
 /* Midia Mobile */
 @media screen and (max-width:1124px) {
+    .msg-atendimento a{
+        font-size: 12px;
+    }
+        
+    .navtop-a {
+        border-radius: 0;
+    }
     .nav-top{
         padding: 16px;
         height: 100px;
@@ -773,14 +780,23 @@ body {
         width: 240px;
         padding: 7px;
     }
+    .contato-box_bloco {
+        flex-direction: column;
+        padding: 1em;
+    }
+    .contatos-contentRight{
+        width: 50vw;
+       margin: auto;
+    }
+    .contatos-contentRight a{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
 }
 
 @media screen and (max-width:667px){
     .nav-top_atendimento{
-        display: none;
-    }
-    
-    .nav-top_telefones{
         display: none;
     }
     
@@ -794,11 +810,7 @@ body {
     .msg-atendimento, .msg-atendimento a{
         font-size: 12px;
     }  
-    
-    .navtop-a {
-       
-        border-radius: 0;
-    }
+
 
     .header_top-txtEspecializada{
         width: 90vw;
@@ -917,11 +929,7 @@ body {
         font-size: 1.4em;
         padding: 25px 40px;
     }
-    .contato-box_bloco {
-        flex-direction: column;
-        padding: 1em;
-    }
-
+   
     .contatos-contentLeft,
     .contatos-contentRight{
         width: 100%;
