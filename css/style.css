@@ -736,7 +736,7 @@ body {
         
         width: 100%;
         top: 80px;
-        left: -30px;
+        right: 0px;
         flex-direction: column;
         justify-content: space-evenly;
         align-items:stretch;
