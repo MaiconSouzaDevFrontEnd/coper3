@@ -827,6 +827,12 @@ body {
         font-size: .65em;
         
     }
+
+    .contatos-box{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 450px) {
     .nav-top{
@@ -914,11 +920,6 @@ body {
     .contato-box_bloco {
         flex-direction: column;
         padding: 1em;
-    }
-    .contatos-box{
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
     }
 
     .contatos-contentLeft,
