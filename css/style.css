@@ -167,12 +167,6 @@ body {
     top: 4px;
 }
 
-/* #burgerMenu:checked + .burgerMenu{
-    background-color: white;
-    border-radius: 30px;
-    
-}  */
-
 #burgerMenu:checked ~ div .navtop-menu{
     transform: translateX(0vw);
 }
@@ -232,13 +226,13 @@ body {
     justify-content: center;
     background-color: #f2f2f2;
     margin: 0 3px;
-    border-radius: 2px;
+    border-radius: 20px;
     text-decoration: none;
     font-size: 13.4px;
     font-weight: 600;
     padding: 5px 15px;
     color: var(--colorAzulPetrolio);
-    
+    overflow: hidden;
     transition: all 500ms;
 }
 
@@ -323,7 +317,7 @@ body {
 
 /* section  Serviços */
 
-#home,#servicos,#carregadeira,#transbordo,#localizacao,#catalogo,#contatos{
+#home,#servicos,#comandosBombas,#carregadeira,#transbordo,#localizacao,#catalogo,#contatos{
     scroll-margin-top:110px;
 }
 
@@ -338,6 +332,10 @@ body {
     font-size: 32px;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.servicos__area p{
+    text-align: center;
 }
 
 .servicos__galeria__cilindros{
@@ -366,7 +364,38 @@ body {
 .servicos__galeria__cards:hover{
     transform: scale(1.05);
 }
+/* Bombas e Comandos */
 
+.container-bombasComandos{
+    padding: 20px;
+}
+
+.container-bombasComandos h2{
+    font-size: 1.8rem ;
+    padding: 20px;
+    border-left: 12px solid var(--color-3);
+    margin-bottom: 50px ;
+}
+
+.container-galeria-bombasComandos{
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+}
+.card-img-bombasComandos{
+    width: 220px;
+    height: 280px;
+    box-shadow: 0px 0px 7px 5px #888888;
+    border-radius: 20px;
+}
+.card-img-bombasComandos img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: contain
+}
 
 /* carregadeira */
 .container-pecas_carregadeira, .container-pecas_transbordo{
@@ -484,7 +513,7 @@ body {
 }
 
 .localizacao_content p{
-    font-size: 1em;
+    font-size: .85em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -503,7 +532,7 @@ body {
     color: #fff;
     margin: 20px auto;
     border-radius: 30px;
-    padding: 18px 40px;
+    padding: 8px 40px;
     background-color: rgb(255, 0, 0) ;
 }
 
@@ -565,6 +594,17 @@ body {
     padding: 5px;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+}
+
+.contatos-box p{
+    font-size: 1.8em;
+    margin-bottom: 2rem;
+}
+
+.contato-box_bloco {
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .contatos-contentLeft{
@@ -578,7 +618,10 @@ body {
 
 .contatos-contentLeft, .contatos-contentRight{
     flex-direction: column;
-    
+}
+
+.contatos-contentRight{
+    min-height: 100%;
 }
 
 .contatos-contentLeft_bt{
@@ -597,7 +640,7 @@ body {
 .contatos-contentLeft a,
 .contatos-contentRight a{
     text-decoration: none;
-    box-shadow:0 0 5px white;
+    
 
     color: white;
     border: 1px solid white;
@@ -644,7 +687,7 @@ body {
 }
 
  .container-contatos_desenvolvido{
-    padding-top: 10px;
+    padding: 10px 0 50px;
     border-top:2.3px solid #ccc ;
     text-align: center;
     line-height: 2;
@@ -742,10 +785,12 @@ body {
     
     .msg-atendimento, .msg-atendimento a{
         font-size: 12px;
-    }    
-    /* .msg-atendimento::before, .msg-atendimento::after{
-        display: none;
-    } */
+    }  
+    
+    .navtop-a {
+       
+        border-radius: 0;
+    }
 
     .header_top-txtEspecializada{
         width: 90vw;
@@ -769,9 +814,13 @@ body {
         padding: 18px;
         text-align: center;
     }
+
+    .localizacao_content p{
+        font-size: .65em;
+        
+    }
 }
 @media screen and (max-width: 450px) {
-
     .nav-top{
         padding: 16px;
         height: 80px;
@@ -819,10 +868,6 @@ body {
         font-size: 25px;
     }
 
-    .servicos__manutencao{
-
-    }
-
     .banners img{
         border-radius:initial;
     }
@@ -866,7 +911,10 @@ body {
         font-size: 1.4em;
         padding: 25px 40px;
     }
-
+    .contato-box_bloco {
+        flex-direction: column;
+        padding: 1em;
+    }
     .contatos-box{
         justify-content: center;
         flex-direction: column;
@@ -876,7 +924,6 @@ body {
     .contatos-contentLeft,
     .contatos-contentRight{
         width: 100%;
-        padding: 5% ;
     } 
 
     .contatos-btn-whatsapp {
