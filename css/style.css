@@ -736,7 +736,7 @@ body {
         
         width: 100%;
         top: 80px;
-        right: 0px;
+        left: 0px;
         flex-direction: column;
         justify-content: space-evenly;
         align-items:stretch;
@@ -845,7 +845,7 @@ body {
         display: block;
         position: absolute;
         top: 25px;
-        left: 85vw;
+        left: 100vw;
     } 
 
     .header_top-txtEspecializada{
