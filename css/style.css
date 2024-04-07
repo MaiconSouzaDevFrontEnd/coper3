@@ -186,19 +186,15 @@ body {
 }
 
 .msg-atendimento a{
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 17px;
+    text-decoration: underline;
     text-shadow: none;
-    color: #f0f0f0;
-    border:1px solid white;
+    color: var(--color-green);
+    
     
     border-radius: 30px;
     padding: 3px 19px;
     margin: 0 5px;
-}
-
-.msg-atendimento a:hover, .msg-atendimento a:focus{
-    background-color: #05954f;
 }
 
  /* FIM nav-top_atendimento */ 
@@ -686,6 +682,7 @@ body {
     animation: whatsapp 2s ease-in-out infinite;
 }
 
+/* Desenvolvido */
  .container-contatos_desenvolvido{
     padding: 10px 0 50px;
     border-top:2.3px solid #ccc ;
@@ -694,11 +691,13 @@ body {
  } 
 
 .container-contatos_desenvolvido-Link{
+    display: inline-block;
     text-decoration: none;
     color: whitesmoke;
     border: 1.5px solid whitesmoke;
     padding: 2px 30px;
     border-radius: 30px;
+    margin-top: 30px;
 }
 /* Fim footer container-contatos */
 
