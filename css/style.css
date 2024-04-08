@@ -57,10 +57,11 @@ body {
 .header_top {
     height: 100vh;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, .450), rgba(0, 0, 0, .8) 70%, rgba(0, 0, 0, .450)), url(../Img/banner/banner_main.jpg);
+    background-color: #01131c;
+   /*  background-image: linear-gradient(rgba(0, 0, 0, .450), rgba(0, 0, 0, .8) 70%, rgba(0, 0, 0, .450)),;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: top center; */
     position: relative;
 }
 
@@ -167,7 +168,8 @@ body {
     top: 4px;
 }
 
-#burgerMenu:checked ~ div .navtop-menu{
+#burgerMenu:checked ~ div 
+{
     transform: translateX(0vw);
 }
 
@@ -185,7 +187,7 @@ body {
     position: relative;
 }
 
-.msg-atendimento a{
+.msg-atendimento p{
     font-size: 17px;
     text-decoration: underline;
     text-shadow: none;
