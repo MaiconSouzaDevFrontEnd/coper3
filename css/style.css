@@ -715,6 +715,11 @@ body {
 
 /* Midia Mobile */
 @media screen and (max-width:1124px) {
+    .header_top-title {
+        width: 38vw;
+    }
+    
+
     .msg-atendimento a{
         font-size: 12px;
     }
@@ -792,6 +797,10 @@ body {
 }
 
 @media screen and (max-width:667px){
+    .header_top-title {
+        width: 32vw;
+    }
+
     .nav-top_atendimento{
         display: none;
     }
@@ -843,6 +852,9 @@ body {
     }
 }
 @media screen and (max-width: 450px) {
+    .header_top-title {
+        width: 30vw;
+    }
     .nav-top{
         padding: 16px;
         height: 80px;
