@@ -164,9 +164,9 @@ body {
     top: 4px;
 }
 
-#burgerMenu:checked ~ div 
+#burgerMenu:checked ~ .navtop-menu 
 {
-    transform: translateX(0vw);
+    transform: translateX(0);
 }
 
 /* nav-top_atendimento */
@@ -719,7 +719,6 @@ body {
         width: 38vw;
     }
     
-
     .msg-atendimento a{
         font-size: 12px;
     }
@@ -739,9 +738,9 @@ body {
         top: 30px;
         left: 95vw;
     }
+
     .navtop-menu {
         position: absolute;
-        
         width: 100%;
         top: 80px;
         left: 0px;
