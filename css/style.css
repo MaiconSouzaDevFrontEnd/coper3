@@ -164,9 +164,9 @@ body {
     top: 4px;
 }
 
-#burgerMenu:checked ~ .navtop-menu 
+#burgerMenu:checked ~ div .navtop-menu 
 {
-    transform: translateX(0);
+    transform: translateX(0vw);
 }
 
 /* nav-top_atendimento */
