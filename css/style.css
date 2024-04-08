@@ -300,9 +300,9 @@ body {
     line-height: 1.8;
     color: var(--color-whiteLite);
 }
-.header_top-txtEspecializada span{
+/* .header_top-txtEspecializada span{
     color: var(--color-green);
-}
+} */
 
 .header_top-quemSomos{
     width: 65vw;
